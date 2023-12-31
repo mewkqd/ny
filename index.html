@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 100px;
+            background-color: cadetblue;
+        }
+        .timer{
+            height: 100vh;
+            display: grid;
+            align-content: center;
+            justify-items: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="timer">
+        <div class="timer__items">
+          <div class="timer__item timer__days">00</div>
+          <div class="timer__item timer__hours">00</div>
+          <div class="timer__item timer__minutes">00</div>
+          <div class="timer__item timer__seconds">00</div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+      <script src="/snow/snowstorm-min.js"></script>
+
+    <script>
+
+	    window.onload = function() {
+
+		    snowStorm.snowColor = "#fff"; // Цвет снежинок
+		    snowStorm.flakesMaxActive = 100; // Максимальное количество видимых снежинок
+		    snowStorm.followMouse = true; // true - гоняться за курсором, false - нет
+		    snowStorm.snowCharacter = "&bull;"; // Вид снежинки
+
+	    };
+
+    </script>
+</body>
+</html>
